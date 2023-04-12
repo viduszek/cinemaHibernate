@@ -121,8 +121,6 @@ public class main {
                     int result = query.executeUpdate();
                     System.out.println("DELETED! Rows affected: " + result);
                 }
-
-
                 transaction.commit();
             } finally {
                 if (transaction.isActive()) {
